@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form id="head1">
+            <h2 style="color: white;">Player 1</h2>
+            <input type="text" id="text1" placeholder="player X">
+            <input type="submit" id="submit1" value="save">
+        </form>
+        <div class="body">
+            <h2  style="color: white;">Border Size</h2>
+            <input type="number" min="3" value="3" max="15" id="input">
+            <input type="submit" value="save" id="submit">
+        </div>
+
+        <form class="head2">
+            <h2 style="color: white;">Player 2</h2>
+            <input type="text" id="text2" placeholder="player O">
+            <input type="submit" id="submit2" value="save">
+        </form>
+    </div>
+
+    <div class="xod">
+        <div class="who">
+
+        </div>
+    </div>
+
+
+    <div class="box" id="box">
+        <div class="player1">
+            <h2>name X : <span id="name1"></span> </h2>
+            <h3>result-X : <span id="result1">0</span></h3>
+        </div>
+
+        <div id="game" class="game"></div>
+
+        <div class="winner">
+            <h2 id="txt">Winner Is <span id="w"></span></h2>
+            <h3>your result : <span id="winresult"></span></h3>
+            <button id="close" style="cursor: pointer;">Close</button>
+        </div>
+
+        <div class="player2">
+            <h2>name O : <span id="name2"></span> </h2>
+            <h3>result-O : <span id="result2">0</span></h3>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

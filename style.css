@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 1s linear;
+    outline: none;
+}
+
+/* ::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+} */
+
+.block{
+    width: 70px;
+    height: 70px;
+    float: left;
+    border: 2px solid rgb(221, 214, 190);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    /* opacity: .2; */
+    
+    color: rgb(255, 0, 0);
+    
+}
+
+.block:hover{
+    transition: 0ms;
+    background: rgb(146, 125, 232);
+    opacity: .4;
+    /* color: red; */
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#game{
+    transition: all 1s linear;
+}
+#name1{
+    color: red;
+}
+#name2{
+    color: red;
+}
+
+#result1{
+    color: brown;
+}
+#result2{
+    color: brown;
+}
+
+.winner{
+    position: absolute;
+    /* margin-top: -50%; */
+    width: 150px;
+    height: 150px;
+    background: pink;
+    opacity: 0;
+    margin-left: calc(50% - 75px);
+    text-align: center;
+}
+.winner h2{
+    color: rgb(0, 0, 0);
+}
+.winner h3{
+    margin-top: 2rem;
+}
+#close{
+    margin-top: 2rem;
+    font-size: 18px;
+}
+
+#w{
+    color: rgb(255, 0, 0);
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: all 1s linear;
+    /* background-image: url(kim.jpg); */
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+
+}
+
+.player1,
+.player2{
+    background: white;
+    padding: .4rem;
+}
+
+#text1,
+#text2,
+input{
+    font-size: 18px;
+}
+#submit2,
+#submit1,
+#submit{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.xod{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border-radius: 2rem;
+    /* background: red; */
+    margin: auto;
+}
+
+.who{
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    /* background-color: red; */
+    border-radius: 2rem;
+    margin-top: 5px;
+}
